@@ -1,44 +1,46 @@
-##Create class for Profile
+#creating Class profile
 class Profile:
-    def __init__(self, name, favourite_language, hobby, tech_stack, github_username, fun_fact):
-        self.name=name
-        self.favourite_language=favourite_language
-        self.hobby=hobby
-        self.tech_stack=tech_stack
-        self.github_username=github_username
-        self.fun_fact=fun_fact
-       #self = current instance of class. Helps each object to store its own data
-    
-    ##Methods
-    #Intro message
+    def __init__(self, name,favourite_language,hobby,tech_stack,github_username,fun_fact):
+        self.name = name
+        self.favourite_language = favourite_language
+        self.hobby = hobby
+        self.tech_stack = tech_stack
+        self.github_username = github_username
+        self.fun_fact = fun_fact
+
+# first method to introduce myself
     def introduce(self):
-        print(f"Hi, I'm {self.name}. I love {self.favourite_language} and my hobby is {self.hobby}")    
+        print(f"Hello, My name is {self.name}, I love {self.favourite_language}, and I also enjoy {self.hobby}.")
     
-    #Showing tech stack
-    def show_stack(self):
-        print("My tech stack includes:")
-        for tool in self.tech_stack:
-            print(f"-{tool}")  
-    
-    #Github profile
-    def github_link(self):
-        return (f"https://github.com/{self.github_username}") # So it does not print "None"     
+# second method to display my tech stack
+    def display_tech_stack(self):
+        print("This is my Tech Stack:")
+        for i in self.tech_stack:
+            print(f"- {i}")
 
-#Script to create and use profile
-if __name__ == "__main__":#This line makes sure this code runs only when 'profile.py' is executed not when it's a module
-    #Profile creation  
-    my_profile=Profile(
-        name="Magezi Richard Elijah (M24B13/019)",
+# method that returns my github profile link
+    def github_profile(self):
+        return f"https://github.com/{self.github_username}"
+    
+    
+if __name__ == "__main__":
+    my_profile = Profile(
+        name="Nakalyowa Hadijah",
         favourite_language="Python",
-        hobby="Auto Mechanical Projects",
-        tech_stack=["Python", "Django", "React","C++"],
-        github_username="Plastimytes",
-        fun_fact="I can run 100 metres in 10.95 seconds"
-    )  
+        hobby="Listening to Podcasts",
+        tech_stack=["Python", "JavaScript", "MERN", "CSS", "HTML"],
+        github_username="havyhadija",
+        fun_fact="i used to dance kalipso for my grandparents"
+    )
 
-#Calling the methods
-my_profile.introduce()
-my_profile.show_stack()
-print(f"Github Profile: {my_profile.github_link()}")
+    my_profile.introduce()
+    my_profile.display_tech_stack()
+    print(f"GitHub Profile:{my_profile.github_profile()}")
+    
+    
 
-print(f"Fun Fact: {my_profile.fun_fact}")
+
+
+
+
+
