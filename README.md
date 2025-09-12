@@ -1,2 +1,3 @@
 # Profile_Group_A
-Repository for the assignment on profile creation
+This is a Repository is which the group members of Group keep their files on the assignmnet of profile creation in object oriented programming.
+
