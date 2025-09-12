@@ -28,7 +28,7 @@ class Profile:
 if __name__ == "__main__":#This line makes sure this code runs only when 'profile.py' is executed not when it's a module
     #Profile creation  
     my_profile=Profile(
-        name="Richard",
+        name="Magezi Richard Elijah (M24B13/019)",
         favourite_language="Python",
         hobby="Auto Mechanical Projects",
         tech_stack=["Python", "Django", "React","C++"],
@@ -40,4 +40,5 @@ if __name__ == "__main__":#This line makes sure this code runs only when 'profil
 my_profile.introduce()
 my_profile.show_stack()
 print(f"Github Profile: {my_profile.github_link()}")
+
 print(f"Fun Fact: {my_profile.fun_fact}")
