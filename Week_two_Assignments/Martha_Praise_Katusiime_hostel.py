@@ -251,4 +251,5 @@ if __name__ == "__main__":
     
     print(f"\nTotal visitors served: {len(set([v['visitor'].name for v in hostel.completed_visits]))}")
     print(f"Total completed visits: {len(hostel.completed_visits)}")
+
     print(f"Currently active visits: {len(hostel.active_visits)}")
