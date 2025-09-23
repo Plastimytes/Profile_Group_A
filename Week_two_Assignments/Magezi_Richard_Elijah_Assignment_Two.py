@@ -1,4 +1,4 @@
-#Visitor class(added time in and out)
+#Visitor class(added time in and out)#
 class Visitor:
    def __init__(self, Name, Number, Reason, Time_In, Time_Out):
       self.name=Name
