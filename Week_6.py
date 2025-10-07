@@ -40,7 +40,8 @@ class pigybank:
         if amount > self._coins:
             raise ValueError("Money will come")
         self._coins -= amount                    
-    
+
+#Getter to display setter results    
     def how_Much(self):
         return self._coins
 
