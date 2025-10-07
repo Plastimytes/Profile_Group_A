@@ -3,7 +3,7 @@
 class RTracker:
     def __init__(self, partner):
         self.partner = partner
-        self._trust = 50
+        self.__trust = 50
         self._mood ="Happy"
         self._vibe = 100
 
@@ -25,4 +25,6 @@ class RTracker:
         self._mood ="Good"
 
 netflix= RTracker("Chill")
-netflix.build_trust(20)                           
+netflix.build_trust(20)  
+
+netflix._trust
