@@ -27,4 +27,5 @@ class RTracker:
 netflix= RTracker("Chill")
 netflix.build_trust(20)  
 
+
 netflix._trust
